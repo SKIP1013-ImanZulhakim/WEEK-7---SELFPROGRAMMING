@@ -1,0 +1,26 @@
+package selfProgramming;
+import java.util.Scanner;
+public class Power {
+
+	public static void main(String[] args) {
+		// Two numbers are entered through the keyboard. Write a program to find the value of one number raised to the power of another. 
+		//(Do not use Java built-in method)
+		Scanner sc = new Scanner (System.in);
+		
+		int baseNum,powerNum,ans=1;
+		
+		System.out.println("Please enter base number : ");
+		baseNum = sc.nextInt();
+		
+		System.out.println("Please enter power number : ");
+		powerNum = sc.nextInt();
+		
+		for(int i=1; i<=powerNum; i++)
+		{
+			ans *= baseNum;
+		}
+		
+		System.out.println(baseNum+" power of "+powerNum+" is " +ans);
+	}
+
+}
