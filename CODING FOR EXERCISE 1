@@ -1,0 +1,24 @@
+package selfProgramming;
+import java.util.Scanner;
+
+public class While {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner (System.in);
+		
+		int num, c=0, avg=0;
+		System.out.println("Enter your num :");
+		num = sc.nextInt();
+		
+		while(c<9) {
+		c = c+1;
+		System.out.println("Enter your num :");
+		num = sc.nextInt();
+		avg = avg + num;
+		}
+		
+		System.out.println("Average is : " + avg);
+	}
+
+}
